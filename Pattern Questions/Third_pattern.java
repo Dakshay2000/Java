@@ -11,6 +11,7 @@ public class Third_pattern {
                 System.out.print("*  ");
             }
             System.out.print("\n");
+            
         }
     }
 }
