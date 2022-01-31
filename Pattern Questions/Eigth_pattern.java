@@ -1,4 +1,4 @@
-public class Ninth_pattern {
+public class Eigth_pattern {
     public static void main(String[] args) {
         int n = 5;
         int nst = 0;
