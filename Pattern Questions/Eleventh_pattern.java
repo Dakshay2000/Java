@@ -11,25 +11,25 @@ public class Eleventh_pattern {
             //For spaces
             for(int j = 1; j <= nsp1; j++)
             {
-                System.out.print("\t");
+                System.out.print("   ");
             }
             
             //For stars
             for(int j = 1; j <= nst1; j++)
             {
-                System.out.print("*\t");
+                System.out.print("* ");
             }
 
             //For spaces
             for(int j = 1; j <= nsp2; j++)
             {
-                System.out.print("\t");
+                System.out.print("   ");
             }
-
+            
             //For stars
             for(int j = 1; j <= nst2; j++)
             {
-                System.out.print("*\t");
+                System.out.print("* ");
             }
 
             if(nst2 != 1){
