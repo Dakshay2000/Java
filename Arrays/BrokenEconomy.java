@@ -1,7 +1,24 @@
 import java.util.Scanner;
 
 public class BrokenEconomy {
-    public static void Binary(int n, int key, int arr[], int floor, int ceil) {
+    //We cannot print value of floor and ceil by calling another function because another function cannot update the value of a variable(because value in variable pass by "call by value").
+    //In array "call by reference works" and array can be update through calling another function.
+
+    public static void main(String[] args) {
+        int n;
+        int key;
+        Scanner scn = new Scanner(System.in);
+
+        n = scn.nextInt();
+        key = scn.nextInt();
+        int floor = -1;
+        int ceil = -1;
+        int []arr = new int[n];
+        for(int i = 0; i < n; i++)
+        {
+            arr[i] = scn.nextInt(); 
+        }
+
         int start = 0;
         int end = n;
         
@@ -28,28 +45,8 @@ public class BrokenEconomy {
                 end = mid - 1;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        int n;
-        int key;
-        Scanner scn = new Scanner(System.in);
-
-        n = scn.nextInt();
-        key = scn.nextInt();
-        int floor = -1;
-        int ceil = -1;
-        int []arr = new int[n];
-        for(int i = 0; i < n; i++)
-        {
-            arr[i] = scn.nextInt(); 
-        }
-
-        Binary(n, key, arr, floor, ceil);
 
         System.out.println(floor);
         System.out.println(ceil);
-        
-        
     }
 }
