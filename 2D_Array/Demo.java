@@ -1,6 +1,5 @@
 import java.util.Scanner;
-//hello
-//Tarun
+
 public class Demo {
     public static void main(String[] args) {
         int n;
